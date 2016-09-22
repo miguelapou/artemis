@@ -1,9 +1,17 @@
 var mongoose = require('mongoose');
 
 var JobSchema = new mongoose.Schema({
-  title: String,
-  description: String,
-  image: String
+  jobTitle: String,
+  notes: String,
+  companyName: String,
+  dateApplied: String,
+  coverLetter: String,
+  contactName: String,
+  contactEmail: String,
+  interviewDate: String,
+  jobPostLink: String,
+  followUps: String,
+  status: String
 });
 
 module.exports = mongoose.model('Job', JobSchema);
