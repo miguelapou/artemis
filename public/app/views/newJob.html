@@ -2,16 +2,16 @@
 
 <form ng-submit="createJob()">
   <div class="form-group">
-    <label for="title">Title</label>
-    <input type="text" class="form-control" id="title" ng-model="job.title">
+    <label for="jobTitle">Job Title</label>
+    <input type="text" class="form-control" id="jobTitle" ng-model="job.jobTitle">
   </div>
   <div class="form-group">
-    <label for="description">Description</label>
-    <textarea class="form-control" id="description" ng-model="job.description"></textarea>
+    <label for="notes">Questions/Notes</label>
+    <textarea class="form-control" id="notes" ng-model="job.notes"></textarea>
   </div>
   <div class="form-group">
-    <label for="image">Image Link</label>
-    <input type="url" class="form-control" id="image" placeholder="" ng-model="job.image">
+    <label for="companyName">Company Name</label>
+    <input type="text" class="form-control" id="companyName" placeholder="" ng-model="job.companyName">
   </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>
