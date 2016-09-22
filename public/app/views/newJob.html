@@ -1,8 +1,10 @@
 <h1>New Job</h1>
 
+<div class="jobFormDiv">
+  
 <form ng-submit="createJob()">
   <div class="form-group">
-    <label for="jobTitle">Job Title</label>
+    <label for="jobTitle" class="jobTitle">Job Title</label>
     <input type="text" class="form-control" id="jobTitle" ng-model="job.jobTitle">
   </div>
   <div class="form-group">
@@ -16,3 +18,5 @@
 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
+</div>
