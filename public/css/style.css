@@ -1,0 +1,40 @@
+body{
+  background-color: #c0022e;
+}
+
+.logotext{
+  font-size: 100px;
+  text-align: center;
+  color: #341c02;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.logosubtitle{
+  text-align: center;
+  color: #341c02;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.logodiv{
+  display: block;
+  margin-left: auto;
+  text-align: center;
+  background-color: #f2f2f2;
+  width: 410px;
+  height: 300px;
+  border-radius: 30px;
+  -ms-transform: rotate(5deg); /* IE 9 */
+  -webkit-transform: rotate(5deg); /* Safari */
+  transform: rotate(5deg);
+}
+
+.divwrapper{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.searchBar{
+  -ms-transform: rotate(1deg); /* IE 9 */
+  -webkit-transform: rotate(1deg); /* Safari */
+  transform: rotate(1deg);
+}
