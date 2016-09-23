@@ -2,6 +2,11 @@ body{
   background-color: #c0022e;
 }
 
+#navbar{
+  background-color: white;
+  margin-bottom: 40px;
+}
+
 .logotext{
   font-size: 100px;
   text-align: center;
