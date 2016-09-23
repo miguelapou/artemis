@@ -38,3 +38,6 @@ body{
   -webkit-transform: rotate(1deg); /* Safari */
   transform: rotate(1deg);
 }
+.jobsListed{
+  color: #c0022e;
+}
