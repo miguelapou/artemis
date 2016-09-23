@@ -20,6 +20,7 @@ angular.module('JobCtrls', ['JobServices'])
   $scope.job = {};
 
   Job.get({ id: $stateParams.id }, function success(data) {
+    console.log(data)
     $scope.job = data;
   }, function error(data) {
     console.log(data);
@@ -29,7 +30,14 @@ angular.module('JobCtrls', ['JobServices'])
   $scope.job = {
     jobTitle: '',
     notes: '',
-    companyName: ''
+    companyName: '',
+    dateApplied: '',
+    coverLetter: '',
+    contactPerson: '',
+    contactInfo: '',
+    interviewDate: '',
+    jobLink: '',
+    status: ''
   };
 
   $scope.createJob = function() {
