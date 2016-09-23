@@ -38,7 +38,6 @@ body{
   -webkit-transform: rotate(1deg); /* Safari */
   transform: rotate(1deg);
 }
-
 .jobFormDiv{
   background-color: #f2f2f2;
   width: 80%; 
@@ -51,10 +50,14 @@ body{
   color: #341c02;
   font-family: 'Permanent Marker', cursive;
 }
+.jobSubtitle{
+  color: #341c02;
+  font-family: 'Impact', cursive;
+}
 
 .jobText{
   color: #341c02;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Impact', cursive;
 }
 
 .logoTextSmall{
