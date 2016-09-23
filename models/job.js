@@ -6,11 +6,10 @@ var JobSchema = new mongoose.Schema({
   companyName: String,
   dateApplied: String,
   coverLetter: String,
-  contactName: String,
-  contactEmail: String,
+  contactPerson: String,
+  contactInfo: String,
   interviewDate: String,
-  jobPostLink: String,
-  followUps: String,
+  jobLink: String,
   status: String
 });
 

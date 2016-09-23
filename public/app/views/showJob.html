@@ -3,10 +3,24 @@
 </div>
 
 <div class="well">
+<!-- <<<<<<< HEAD
   <h3 class="jobText">Company Name: {{job.companyName}}</h3>
   <p class="jobText">
     {{job.notes}}
   </p>
+======= -->
+  <h3 class="jobTitle">Company Name: {{job.companyName}}</h3>
+  <ul class="jobText">
+    <li>{{job.notes}}</li>
+    <li>{{job.dateApplied}}</li>
+    <li>{{job.coverLetter}}</li>
+    <li>{{job.contactPerson}}</li>
+    <li>{{job.contactInfo}}</li>
+    <li>{{job.interviewDate}}</li>
+    <li>{{job.jobLink}}</li>
+    <li>{{job.status}}</li>
+  </ul>
+<!-- >>>>>>> d7db7e19392dc89c31a38738556444b3a719faae -->
 </div>
 
 <a href="/" class="btn btn-primary">&larr; Back</a>
