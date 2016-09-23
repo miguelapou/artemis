@@ -2,11 +2,6 @@ body{
   background-color: #c0022e;
 }
 
-#navbar{
-  background-color: white;
-  margin-bottom: 40px;
-}
-
 .logotext{
   font-size: 100px;
   text-align: center;
@@ -26,7 +21,7 @@ body{
   text-align: center;
   background-color: #f2f2f2;
   width: 410px;
-  height: 225px;
+  height: 300px;
   border-radius: 30px;
   -ms-transform: rotate(5deg); /* IE 9 */
   -webkit-transform: rotate(5deg); /* Safari */
@@ -80,13 +75,42 @@ body{
   -webkit-transform: rotate(3deg); /* Safari */
   transform: rotate(3deg);
   margin: 20px auto;
-  padding-top: 10px;
 }
 
 .deleteButton{
   display: inline-block;
   position: relative;
 }
-#searchLabel {
-  color: white;
+
+.statusText{
+  font-size: 20px;
+  display: inline;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.sNotApplied{
+  -ms-transform: rotate(-3deg); /* IE 9 */
+  -webkit-transform: rotate(-3deg); /* Safari */
+  transform: rotate(-3deg);
+  color: #feac31;
+}
+
+.sApplied{
+  -ms-transform: rotate(3deg); /* IE 9 */
+  -webkit-transform: rotate(3deg); /* Safari */
+  transform: rotate(3deg);
+  color: #d50c21;
+}
+
+.sInProgress{
+  -ms-transform: rotate(-5deg); /* IE 9 */
+  -webkit-transform: rotate(-5deg); /* Safari */
+  transform: rotate(-5deg);
+  color: #acc069;
+}
+
+.notHired{
+  -ms-transform: rotate(1deg); /* IE 9 */
+  -webkit-transform: rotate(1deg); /* Safari */
+  transform: rotate(1deg);
 }
