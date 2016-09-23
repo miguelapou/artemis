@@ -18,6 +18,24 @@
   <h1>
     <a class="jobTitle" ng-href="/jobs/{{job._id}}">{{job.jobTitle}}</a>
   </h1>
-    <h4 class="jobSubtitle">@ {{job.companyName}}</h4>
+
+    <h4 class="jobSubtitle">@ {{job.companyName}} - {{job.contactPerson}} - {{job.contactInfo}}</h4>
+    <div ng-show="{{job.jobLink}}"><a ng-href="{{job.jobLink}}">Link to job listing</a></div>
+    <div class="statusText" ng-show="{{job.dateApplied}}">Date applied - {{job.dateApplied | date : format : fullDate}}<br></div>
+    <div class="statusText" ng-show="{{job.interviewDate}}">Interview Date - {{job.interviewDate | date : format : fullDate}}<br></div>
+    <div class="well" ng-show="{{job.notes}}">
+      <h4>Notes</h4>
+      {{job.notes}}
+    </div>
+    <div class="well" ng-show="{{job.coverLetter}}">
+      <h4>Cover Letter</h4>
+      {{job.coverLetter}}
+    </div>
+    <h4 class="jobSubtitle">Status</h4>
+    <div class="statusText sNotApplied" ng-show="{{job.status == 'Not Applied'}}">Not Applied</div>
+    <div class="statusText sApplied" ng-show="{{job.status == 'Applied'}}">Applied</div>
+    <div class="statusText sInProgress" ng-show="{{job.status == 'In Progress'}}">In Progress</div>
+    <div class="statusText sNotHired" ng-show="{{job.status == 'Not Hired'}}">Not Hired</div>
+
   <a ng-click="deleteJob(job._id, $index)" class="btn btn-danger glyphicon glyphicon-trash pull-right"></a>
 </div>

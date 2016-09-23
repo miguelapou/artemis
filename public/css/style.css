@@ -81,3 +81,36 @@ body{
   display: inline-block;
   position: relative;
 }
+
+.statusText{
+  font-size: 20px;
+  display: inline;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.sNotApplied{
+  -ms-transform: rotate(-3deg); /* IE 9 */
+  -webkit-transform: rotate(-3deg); /* Safari */
+  transform: rotate(-3deg);
+  color: #feac31;
+}
+
+.sApplied{
+  -ms-transform: rotate(3deg); /* IE 9 */
+  -webkit-transform: rotate(3deg); /* Safari */
+  transform: rotate(3deg);
+  color: #d50c21;
+}
+
+.sInProgress{
+  -ms-transform: rotate(-5deg); /* IE 9 */
+  -webkit-transform: rotate(-5deg); /* Safari */
+  transform: rotate(-5deg);
+  color: #acc069;
+}
+
+.notHired{
+  -ms-transform: rotate(1deg); /* IE 9 */
+  -webkit-transform: rotate(1deg); /* Safari */
+  transform: rotate(1deg);
+}
