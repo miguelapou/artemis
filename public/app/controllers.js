@@ -25,6 +25,14 @@ angular.module('JobCtrls', ['JobServices'])
   }, function error(data) {
     console.log(data);
   });
+
+  $scope.createJob = function() {
+    Job.put({ id: $stateParams.id }, $scope.job, function success(data) {
+      window.location.href = '/';
+    }, function error(data) {
+      console.log(data);
+    });
+  };
 }])
 .controller('NewCtrl', ['$scope', '$location', 'Job', function($scope, $location, Job) {
   $scope.job = {

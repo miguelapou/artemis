@@ -1,26 +1,146 @@
 <div class="logoSmallDiv">
-  <h1 class="jobTitle logoTextSmall">{{job.jobTitle}}</h1>
+  <h1 class="jobTitle" ng-href="/jobs/{{job._id}}">{{job.jobTitle}}</h1>
 </div>
 
-<div class="well">
-<!-- <<<<<<< HEAD
-  <h3 class="jobText">Company Name: {{job.companyName}}</h3>
-  <p class="jobText">
-    {{job.notes}}
-  </p>
+<div class="jobFormDiv">
+  
+<!-- <form ng-submit="createJob()">
+  <div class="form-group">
+    <label for="jobTitle" class="jobTitle">Job Title</label>
+    <input type="text" class="form-control" id="jobTitle" ng-model="job.jobTitle">
 ======= -->
-  <h3 class="jobTitle">Company Name: {{job.companyName}}</h3>
-  <ul class="jobText">
-    <li>{{job.notes}}</li>
-    <li>{{job.dateApplied}}</li>
-    <li>{{job.coverLetter}}</li>
-    <li>{{job.contactPerson}}</li>
-    <li>{{job.contactInfo}}</li>
-    <li>{{job.interviewDate}}</li>
-    <li>{{job.jobLink}}</li>
-    <li>{{job.status}}</li>
-  </ul>
-<!-- >>>>>>> d7db7e19392dc89c31a38738556444b3a719faae -->
+<form class="form-horizontal" ng-submit="createJob()">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Job Opportunity Info:</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="companyName">Company Name</label>  
+  <div class="col-md-4">
+  <input class="companyName" name="companyName" type="text" placeholder="" class="form-control input-md" ng-model="job.companyName">
+    
+  </div>
 </div>
 
-<a href="/" class="btn btn-primary">&larr; Back</a>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="jobTitle">Job Title</label>  
+  <div class="col-md-4">
+  <input class="jobTitle" name="jobTitle" type="text" placeholder="" class="form-control input-md" ng-model="job.jobTitle">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="dateApplied">Application Date</label>  
+  <div class="col-md-4">
+  <input class="dateApplied" name="dateApplied" placeholder="" class="form-control input-md" ng-model="job.dateApplied">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="contactPerson">Contact Person</label>  
+  <div class="col-md-4">
+  <input class="contactPerson" name="contactPerson" type="text" placeholder="" class="form-control input-md" ng-model="job.contactPerson">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="contactInfo">Contact Info</label>  
+  <div class="col-md-4">
+  <input class="contactInfo" name="contactInfo" type="text" placeholder="" class="form-control input-md" ng-model="job.contactInfo">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="interviewDate">Interview Date</label>  
+  <div class="col-md-4">
+  <input class="interviewDate" name="interviewDate" placeholder="" class="form-control input-md" ng-model="job.interviewDate">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="jobLink">Job Post Link</label>  
+  <div class="col-md-4">
+  <input class="jobLink" name="jobLink" type="url" placeholder="" class="form-control input-md" ng-model="job.jobLink">
+    
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios">Job Status</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="radios-0">
+      <input type="radio" name="radios" class="radios-0" value="Not Applied" ng-model="job.status" checked="checked">
+      Not Applied
+    </label>
+  </div>
+  <div class="radio">
+    <label for="radios-1">
+      <input type="radio" name="radios" class="radios-1" value="Applied" ng-model="job.status">
+      Applied
+    </label>
+  </div>
+  <div class="radio">
+    <label for="radios-2">
+      <input type="radio" name="radios" class="radios-2" value="In Progress" ng-model="job.status">
+      In Progress
+    </label>
+  </div>
+  <div class="radio">
+    <label for="radios-3">
+      <input type="radio" name="radios" class="radios-3" value="Not Hired" ng-model="job.status">
+      Not Hired
+    </label>
+  </div>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="coverLetter">Cover Letter</label>  
+  <div class="col-md-4">
+  <input name="coverLetter" type="url" placeholder="" class="coverLetter form-control input-md" ng-model="job.coverLetter">
+    
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="notes">Notes</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" class="notes" name="notes" ng-model="job.notes"></textarea>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-lg-4 control-label" for="formButton"></label>
+  <div class="col-md-4">
+    <a href="/" class="btn btn-primary">&larr; Back</a>
+    <button class="formButton" name="formButton" class="btn-lg btn-success">Add Job</button>
+
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+</div>
+
+<br>
+<br>
+
