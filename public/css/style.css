@@ -38,6 +38,46 @@ body{
   -webkit-transform: rotate(1deg); /* Safari */
   transform: rotate(1deg);
 }
-.jobsListed{
-  color: #c0022e;
+.jobFormDiv{
+  background-color: #f2f2f2;
+  width: 80%; 
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.jobTitle{
+  color: #341c02;
+  font-family: 'Permanent Marker', cursive;
+}
+.jobSubtitle{
+  color: #341c02;
+  font-family: 'Impact', cursive;
+}
+
+.jobText{
+  color: #341c02;
+  font-family: 'Impact', cursive;
+}
+
+.logoTextSmall{
+  line-height: 100px;
+}
+
+.logoSmallDiv{
+  display: block;
+  text-align: center;
+  width: 300px;
+  height: 100px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  -ms-transform: rotate(3deg); /* IE 9 */
+  -webkit-transform: rotate(3deg); /* Safari */
+  transform: rotate(3deg);
+  margin: 20px auto;
+}
+
+.deleteButton{
+  display: inline-block;
+  position: relative;
 }
