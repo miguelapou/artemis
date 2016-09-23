@@ -1,6 +1,8 @@
 angular.module('JobServices', ['ngResource'])
 .factory('Job', ['$resource', function($resource) {
-  return $resource('/api/jobs/:id');
+  return $resource('/api/jobs/:id', null, {
+    'put': { method:'PUT' }
+});
 }])
 .factory('Auth', ['$window', function($window){
   return {

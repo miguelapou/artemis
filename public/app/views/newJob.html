@@ -19,7 +19,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="companyName">Company Name</label>  
   <div class="col-md-4">
-  <input id="companyName" name="companyName" type="text" placeholder="" class="form-control input-md" ng-model="job.companyName">
+  <input class="companyName" name="companyName" type="text" placeholder="" class="form-control input-md" ng-model="job.companyName">
     
   </div>
 </div>
@@ -28,7 +28,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="jobTitle">Job Title</label>  
   <div class="col-md-4">
-  <input id="jobTitle" name="jobTitle" type="text" placeholder="" class="form-control input-md" ng-model="job.jobTitle">
+  <input class="jobTitle" name="jobTitle" type="text" placeholder="" class="form-control input-md" ng-model="job.jobTitle">
     
   </div>
 </div>
@@ -37,7 +37,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="dateApplied">Application Date</label>  
   <div class="col-md-4">
-  <input id="dateApplied" name="dateApplied" type="date" placeholder="" class="form-control input-md" ng-model="job.dateApplied">
+  <input class="dateApplied" name="dateApplied" type="date" placeholder="" class="form-control input-md" ng-model="job.dateApplied">
     
   </div>
 </div>
@@ -46,7 +46,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="contactPerson">Contact Person</label>  
   <div class="col-md-4">
-  <input id="contactPerson" name="contactPerson" type="text" placeholder="" class="form-control input-md" ng-model="job.contactPerson">
+  <input class="contactPerson" name="contactPerson" type="text" placeholder="" class="form-control input-md" ng-model="job.contactPerson">
     
   </div>
 </div>
@@ -55,7 +55,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="contactInfo">Contact Info</label>  
   <div class="col-md-4">
-  <input id="contactInfo" name="contactInfo" type="text" placeholder="" class="form-control input-md" ng-model="job.contactInfo">
+  <input class="contactInfo" name="contactInfo" type="text" placeholder="" class="form-control input-md" ng-model="job.contactInfo">
     
   </div>
 </div>
@@ -64,7 +64,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="interviewDate">Interview Date</label>  
   <div class="col-md-4">
-  <input id="interviewDate" name="interviewDate" type="date" placeholder="" class="form-control input-md" ng-model="job.interviewDate">
+  <input class="interviewDate" name="interviewDate" type="date" placeholder="" class="form-control input-md" ng-model="job.interviewDate">
     
   </div>
 </div>
@@ -73,7 +73,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="jobLink">Job Post Link</label>  
   <div class="col-md-4">
-  <input id="jobLink" name="jobLink" type="url" placeholder="" class="form-control input-md" ng-model="job.jobLink">
+  <input class="jobLink" name="jobLink" type="url" placeholder="" class="form-control input-md" ng-model="job.jobLink">
     
   </div>
 </div>
@@ -84,25 +84,25 @@
   <div class="col-md-4">
   <div class="radio">
     <label for="radios-0">
-      <input type="radio" name="radios" id="radios-0" value="Not Applied" ng-model="job.status" checked="checked">
+      <input type="radio" name="radios" class="radios-0" value="Not Applied" ng-model="job.status" checked="checked">
       Not Applied
     </label>
   </div>
   <div class="radio">
     <label for="radios-1">
-      <input type="radio" name="radios" id="radios-1" value="Applied" ng-model="job.status">
+      <input type="radio" name="radios" class="radios-1" value="Applied" ng-model="job.status">
       Applied
     </label>
   </div>
   <div class="radio">
     <label for="radios-2">
-      <input type="radio" name="radios" id="radios-2" value="In Progress" ng-model="job.status">
+      <input type="radio" name="radios" class="radios-2" value="In Progress" ng-model="job.status">
       In Progress
     </label>
   </div>
   <div class="radio">
     <label for="radios-3">
-      <input type="radio" name="radios" id="radios-3" value="Not Hired" ng-model="job.status">
+      <input type="radio" name="radios" class="radios-3" value="Not Hired" ng-model="job.status">
       Not Hired
     </label>
   </div>
@@ -113,7 +113,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="coverLetter">Cover Letter</label>  
   <div class="col-md-4">
-  <input id="coverLetter" name="coverLetter" type="url" placeholder="" class="form-control input-md" ng-model="job.coverLetter">
+  <input name="coverLetter" type="url" placeholder="" class="coverLetter form-control input-md" ng-model="job.coverLetter">
     
   </div>
 </div>
@@ -122,7 +122,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="notes">Notes</label>
   <div class="col-md-4">                     
-    <textarea class="form-control" id="notes" name="notes" ng-model="job.notes"></textarea>
+    <textarea class="form-control" class="notes" name="notes" ng-model="job.notes"></textarea>
   </div>
 </div>
 
@@ -130,7 +130,8 @@
 <div class="form-group">
   <label class="col-lg-4 control-label" for="formButton"></label>
   <div class="col-md-4">
-    <button id="formButton" name="formButton" class="btn-lg btn-success">Add Job</button>
+    <a href="/" class="btn btn-primary">&larr; Back</a>
+    <button class="formButton" name="formButton" class="btn-lg btn-success">Add Job</button>
   </div>
 </div>
 
