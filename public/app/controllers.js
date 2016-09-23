@@ -38,10 +38,14 @@ angular.module('JobCtrls', ['JobServices'])
     interviewDate: '',
     jobLink: '',
     status: ''
+    ///############What do I put here?
+    // user_id: user._id
   };
 
   $scope.createJob = function() {
     Job.save($scope.job, function success(data) {
+      //##WHAT GOES HERE!!!
+      console.log(data)
       $location.path('/');
     }, function error(data) {
       console.log(data);

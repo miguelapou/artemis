@@ -1,21 +1,30 @@
 var express = require('express');
 var Job = require('../models/job');
+var User = require('../models/user');
 var router = express.Router();
 
 router.route('/')
   .get(function(req, res) {
-    Job.find(function(err, jobs) {
+    Job.find({userId: req.user.id}, function(err, jobs) {
+      console.log(req.user.id)
       if (err) return res.status(500).send(err);
 
       return res.send(jobs);
     });
   })
+  // userId: User._id,
   .post(function(req, res) {
-    Job.create(req.body, function(err, job) {
-      if (err) return res.status(500).send(err);
-
+    var job = new Job(req.body);
+    job.userId = req.user.id;
+    job.save(function(err, job) {
       return res.send(job);
     });
+
+    // Job.create(req.body, function(err, job) {
+    //   if (err) return res.status(500).send(err);
+
+    //   return res.send(job);
+    // });
   });
 
 router.route('/:id')
